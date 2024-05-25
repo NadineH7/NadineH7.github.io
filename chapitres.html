@@ -7,10 +7,51 @@
     <style>
         body {
             font-family: Impact, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: orange;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li:before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            color: orange;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
+    <button class="button" onclick="window.location.href='jeu.html'">Accueil</button>
     <h1>Chapitres nécessaires à la réalisation du projet :</h1>
     <ul>
         <li>Chapitre 1 : Arithmétique, variables, instructions (page 3)</li>
@@ -41,3 +82,4 @@
     </ul>
 </body>
 </html>
+
